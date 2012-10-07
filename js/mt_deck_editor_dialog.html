@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<title>Deckliste einf&uuml;gen</title>
+	<link rel="stylesheet" href="../css/mt_dialog.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../../../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
+	<script type="text/javascript">
+    function str_replace(search, replace, subject) {
+        return subject.split(search).join(replace);
+    }
+		var MT_DeckLinker = {
+        	e: '',
+        	init: function(e) {
+        		MT_DeckLinker.e = e;
+        		tinyMCEPopup.resizeToInnerSize();
+        	},
+        	insert: function createMT_CardShortcode(e) {
+        		//Create gallery Shortcode
+        		var name = $('#MT_DeckLinker_Name').val();
+        		var list = $('#MT_DeckLinker_List').val();
+                
+                if(list == '')
+        		  tinyMCEPopup.close();
+                    
+                
+        		var output = '[mt_deck';
+        		if(name) {
+        			output += ' name="'+name+'" ';
+        		}
+        		console.log(list);
+        		output += ']';
+                output += str_replace("\n", "<br/>", list) + '[/mt_deck]'
+        		
+        		tinyMCEPopup.execCommand('mceReplaceContent', false, output);
+        		
+        		tinyMCEPopup.close();
+        	}
+        }
+        tinyMCEPopup.onInit.add(MT_DeckLinker.init, MT_DeckLinker);
+	</script>
+</head>
+<body>
+<form id="MT_DeckLinker">
+    <p class="howto">Gib das zu verlinkende Deck ein</p>
+	<p>
+		<label for="MT_DeckLinker_Name">Deckname:</label>
+		<input id="MT_DeckLinker_Name" type="text" value="" />
+        <small class="optional">(Optional)</small>
+	</p>
+	<p>
+		<label for="MT_DeckLinker_List">Deckliste:</label>
+		<textarea id="MT_DeckLinker_List"></textarea>
+        
+	</p>
+    <div class="submitbox">
+		<div id="MT_CardLinker-cancel">
+			<a class="submitdelete deletion" href="#" onclick="javascript: tinyMCEPopup.close();">Abbrechen</a>
+		</div>
+		<div id="MT_CardLinker-update">
+			<input type="submit" value="Deck einf&uuml;gen" class="button-primary" onclick="javascript: MT_DeckLinker.insert(MT_DeckLinker.e); return false;" />
+		</div>
+	</div>
+</form>
+</body>
+</html>
