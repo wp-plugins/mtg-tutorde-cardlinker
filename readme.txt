@@ -15,11 +15,11 @@ This plugin provides some shortcode to easily link MtG Cards and Decks! - Ein Pl
 (English description below German version!)
 
 = DE =
-Dieses Plugin enthÃ¤lt zwei Shortcodes mit denen man ganz einfach Magic the Gathering Karten oder komplette Magic Decks oder Listen verlinken kann.
+Dieses Plugin enth&auml;t zwei Shortcodes mit denen man ganz einfach Magic the Gathering Karten oder komplette Magic Decks oder Listen verlinken kann.
 Die Karten werden mithilfe von [MtG-Tutor](http://www.mtg-tutor.de "Deine Magic Kartendatenbank mit Kombos und mehr") verlinkt. 
 
 * Enth&auml;lt Buttons f&uuml;r den Editor, um die Handhabung mit den Shortcodes zu vereinfachen
-* Optional k&ouml;nnen Kartenbilder bei Karten oder Decks angezeigt werden, wenn man mit der Maus über die Kartennamen f&auml;hrt
+* Optional k&ouml;nnen Kartenbilder bei Karten oder Decks angezeigt werden, wenn man mit der Maus &uuml;ber die Kartennamen f&auml;hrt
 * Optional kann die Starthand-Wahrscheinlichkeit bei Karten in einem Deck angezeigt werden
 
 **Feedback**
@@ -51,16 +51,16 @@ The cards will be linked to [MtG-Tutor](http://www.mtg-tutor.de)
 
 = DE =
 1. Den Ordner `mtutor_cardlinker` in das Verzeichnis `/wp-content/plugins/` hochladen
-1. Das Plugin über das 'Plugins' Menü in Wordpress aktivieren
-1. Optional können jetzt Einstellungen unter 'Einstellungen' und dann 'MtG-Tutor CardLinker' im Wordpress Menü vorgenommen werden
-1. Fertig - Jetzt kann das Plugin genutzt werden. Ich wünsche viel Spaß dabei :)
+1. Das Plugin &uuml;ber das 'Plugins' Menü in Wordpress aktivieren
+1. Optional k&ouml;nnen jetzt Einstellungen unter 'Einstellungen' und dann 'MtG-Tutor CardLinker' im Wordpress Men&uuml; vorgenommen werden
+1. Fertig - Jetzt kann das Plugin genutzt werden. Ich w&uuml;nsche viel Spaß dabei :)
 
 **Einstellungen**
 
 * 'Spalten im Deck Container': Anzahl der Spalten in die das Deck aufgeteilt werden soll
-* 'Zeige Kartenbilder': Sollen per Mouseover über Kartennamen, die entsprechenden Kartenbilder erscheinen
-* 'Theme für Deckcontainer': Falls 'Eigenes' gewählt wird, wird das Standardtheme für den Deck-Container nicht mehr geladen
-* 'Zeige Starthand-Wahrscheinlichkeit': Sollen per Mouseover über Kartennamen, die entsprechenden Starthand-Wahrscheinlichkeiten erscheinen
+* 'Zeige Kartenbilder': Sollen per Mouseover &uuml;ber Kartennamen, die entsprechenden Kartenbilder erscheinen
+* 'Theme für Deckcontainer': Falls 'Eigenes' gew&auml;hlt wird, wird das Standardtheme f&uuml;r den Deck-Container nicht mehr geladen
+* 'Zeige Starthand-Wahrscheinlichkeit': Sollen per Mouseover &uuml;ber Kartennamen, die entsprechenden Starthand-Wahrscheinlichkeiten erscheinen
 
 = EN =
 1. Upload ``mtutor_cardlinker` to the `/wp-content/plugins/` directory
