@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+	<title>Kartenlink einf&uuml;gen</title>    
+	<link rel="stylesheet" href="../css/mt_dialog.css"/>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../../../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
+	<script type="text/javascript">
+		var MT_CardLinker = {
+        	e: '',
+        	init: function(e) {
+        		MT_CardLinker.e = e;
+        		tinyMCEPopup.resizeToInnerSize();
+        	},
+        	insert: function createMT_CardShortcode(e) {
+        		//Create gallery Shortcode
+        		var card = $('#MT_CardLinker_Card').val();
+        		var anchor = $('#MT_CardLinker_Anchor').val();
+                var anchor_text = card;
+      			
+                if(card == '')
+        		  tinyMCEPopup.close();
+                    
+                
+        		var output = '[mt_card';
+        		if(anchor && card) {
+                    anchor_text = anchor;
+        			output += ' card="'+card+'" ';
+        		}
+        		
+        		output += ']';
+                output += anchor_text + '[/mt_card]'
+        		
+        		tinyMCEPopup.execCommand('mceReplaceContent', false, output);
+        		
+        		tinyMCEPopup.close();
+        	}
+        }
+        tinyMCEPopup.onInit.add(MT_CardLinker.init, MT_CardLinker);
+	</script>
+</head>
+<body>
+<form id="MT_CardLinker">
+    <p class="howto">Gib die zu verlinkende Karte ein</p>
+	<p>
+		<label for="MT_CardLinker_Card">Kartenname:</label>
+		<input id="MT_CardLinker_Card" type="text" value="" />
+	</p>
+	<p>
+		<label for="MT_CardLinker_Anchor">Alternativer Linktext:</label>
+		<input id="MT_CardLinker_Anchor" type="text" value="" />
+        <small class="optional">(Freilassen falls Kartenname benutzt werden soll)</small>
+	</p>
+    <div class="submitbox">
+		<div id="MT_CardLinker-cancel">
+			<a class="submitdelete deletion" href="#" onclick="javascript: tinyMCEPopup.close();">Abbrechen</a>
+		</div>
+		<div id="MT_CardLinker-update">
+			<input type="submit" value="Karte einf&uuml;gen" class="button-primary" onclick="javascript: MT_CardLinker.insert(MT_CardLinker.e); return false;" />
+		</div>
+	</div>
+</form>
+</body>
+</html>

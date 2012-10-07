@@ -1,0 +1,85 @@
+.submitbox {
+        padding: 5px 10px;
+        font-size: 11px;
+        overflow: auto;
+        height: 29px;
+    }
+    #MT_CardLinker-cancel {
+        line-height: 25px;
+        float: left;
+        margin-left: -6px;
+        }
+        #MT_CardLinker-cancel a.deletion {
+            color: red;
+            border-bottom-color: red;
+            padding: 3px;
+        }
+        #MT_CardLinker-cancel a.deletion:hover {
+            color: white;
+            background: red;
+        }
+    #MT_CardLinker-update {
+        line-height: 23px;
+        float: right;
+        }
+        #MT_CardLinker-update input.button-primary {
+            text-decoration: none;
+            font-size: 11px!important;
+            line-height: 13px;
+            padding: 3px 8px;
+            cursor: pointer;
+            border-width: 1px;
+            border-style: solid;
+            -webkit-border-radius: 11px;
+            border-radius: 11px;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+
+            border-color: #298CBA;
+            font-weight: bold;
+            color: white;
+            background: #21759B url(../images/button-grad.png) repeat-x scroll left top;
+            text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
+        }
+    .howto {
+        color: #666;
+        font-size: 12px;
+        font-style: italic;
+    }
+    small.optional {
+        color: #666;
+        font-size: 10px;
+        font-style: italic;
+        display: inline-block;
+        margin-left: 135px;
+        margin-top: 5px;
+    }
+    
+    label {
+        color: #333;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 12px;
+        height: 16px;
+        padding-right: 5px;
+        text-align: right;
+        width: 130px;
+        vertical-align:top;
+    }
+    input[type="text"],
+    textarea {
+        border: 1px solid #bbb;
+        border-radius: 4px;
+        
+        color: #333;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: normal;
+        height: 20px;
+        padding: 3px;
+        width: 250px;
+    }
+    textarea {
+        height: 360px;
+    }

@@ -1,0 +1,128 @@
+/**
+ * TinyMCE Plugin for adding a button to the WP editor
+ *
+ * @author Pascal Kleindienst <http://www.codesection.de>
+ * @version 0.1
+ * @license GPL2
+ * @url http://www.mtg-tutor.de/gadgets
+ */
+header { display: block; }
+small {display: inline; }
+
+.mt_deck {
+    min-width: 580px;
+    color: #373737;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    border: 1px solid #ccc;
+    width: 100%;
+    background:white;
+    margin-bottom: 15px;
+    }
+    .mt_deck a{
+        color: #1982D1;
+        text-decoration: none;
+    }
+    .mt_deck a:hover {
+        text-decoration: underline;
+    }
+    .mt_deck header {
+        background: #ddd;
+        padding: 5px 10px !important;
+    }
+    .mt_deck header h3 {
+        font-family: "Helvetica Neue",?Helvetica,?Arial,?sans-serif;
+        font-size: 10px !important;
+        font-weight: 300;
+        line-height: 20px;
+        text-shadow: 1px 1px 0px #fff;
+        
+        text-transform: uppercase;
+        margin: 0 !important;
+    }
+    
+    .mt_deck ul {
+        font-size: 14px;
+        list-style:none;
+        padding: 0;
+        margin: 15px 10px;
+        }
+    .mt_deck footer {
+        clear:both;
+        background: #eee;
+        
+        height: 24px;
+        padding: 5px 10px;
+    }
+    .mt_deck footer small {
+        color: #777;
+        font-size: 12px !important;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 24px;
+        text-shadow: 1px 1px 0px #fff;
+    }
+    .mt_deck .mt_heading {
+        font-weight: bold;
+        }
+        .mt_deck .mt_heading .mt_total {
+            font-style: italic;
+        }
+    .mt_deck .mt_card {
+        padding-left: 10px;
+        }
+        .mt_deck .mt_card .mt_card_comment {
+            font-size: 90%;
+            color: #666;
+            font-style: italic;
+            word-break: break-all;
+        }
+        .mt_deck .mt_card .mt_card_prob {
+            float:right;
+            color: #666;
+            opacity:0;
+            
+            -webkit-transition: opacity 500ms ease-in; 
+            -moz-transition: opacity 500ms ease-in;
+            -o-transition: opacity 500ms ease-in;
+            transition: opacity 500ms ease-in;
+        }
+        
+        .mt_deck .mt_card:hover .mt_card_prob {
+            opacity:1;
+        }
+        
+        
+.mt_columns_2 .mt_col1 {
+    width: 45%;
+    float:left;
+    margin-right: 45px;
+}
+
+
+.mt_columns_2 .mt_col2{
+    width: 45%;
+    float:left;
+}
+    
+    
+.mt_columns_3 .mt_col1 {
+    width: 30%;
+    float:left;
+    margin-right: 26px;
+}
+
+
+.mt_columns_3 .mt_col2{
+    width: 30%;
+    float:left;
+    margin-right: 26px;
+}
+
+.mt_columns_3 .mt_col3{
+    width: 30%;
+    float:left;
+}
+    
