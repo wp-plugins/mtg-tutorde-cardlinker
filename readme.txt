@@ -4,7 +4,7 @@ Donate link: http://www.mtg-tutor.de/
 Tags: mtg, magic the gathering, tcg, trading cards
 Requires at least: 3.0.1
 Tested up to: 3.4
-Stable tag: 4.3
+Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,10 +15,10 @@ This plugin provides some shortcode to easily link MtG Cards and Decks! - Ein Pl
 (English description below German version!)
 
 = DE =
-Dieses Plugin enth&auml;lt zwei Shortcodes mit denen man ganz einfach Magic the Gathering Karten oder komplette Magic Decks oder Listen verlinken kann.
+Dieses Plugin enthÃ¤lt zwei Shortcodes mit denen man ganz einfach Magic the Gathering Karten oder komplette Magic Decks oder Listen verlinken kann.
 Die Karten werden mithilfe von [MtG-Tutor](http://www.mtg-tutor.de "Deine Magic Kartendatenbank mit Kombos und mehr") verlinkt. 
 
-* Enth&auml;lt Buttons fü&uuml;r den Editor, um die Handhabung mit den Shortcodes zu vereinfachen
+* Enth&auml;lt Buttons f&uuml;r den Editor, um die Handhabung mit den Shortcodes zu vereinfachen
 * Optional k&ouml;nnen Kartenbilder bei Karten oder Decks angezeigt werden, wenn man mit der Maus über die Kartennamen f&auml;hrt
 * Optional kann die Starthand-Wahrscheinlichkeit bei Karten in einem Deck angezeigt werden
 
